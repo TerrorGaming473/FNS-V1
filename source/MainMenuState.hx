@@ -148,14 +148,14 @@ class MainMenuState extends MusicBeatState
 			}
 		}
 		#end
+		FlxTween.tween(menuItem, { x:400 }, 1.5, {ease});
+		FlxTween.tween(BARmain, { x:480 }, 1.5, {ease});
 
 		#if android
 		addVirtualPad(UP_DOWN, A_B_E);
 		#end
 
 		super.create();
-		FlxTween.tween(menuItem, { x:400 }, 1.5, {ease});
-		FlxTween.tween(BARmain, { x:480 }, 1.5, {ease});
 	}
 
 	#if ACHIEVEMENTS_ALLOWED

@@ -149,7 +149,7 @@ class MainMenuState extends MusicBeatState
 		}
 		#end
 		FlxTween.tween(menuItem, { x:400 }, 1.5);
-		FlxTween.tween(BARmain, { x:480 }, 1.5);
+		FlxTween.tween(bar, { x:480 }, 1.5);
 
 		#if android
 		addVirtualPad(UP_DOWN, A_B_E);

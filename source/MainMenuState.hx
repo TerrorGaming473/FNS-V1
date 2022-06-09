@@ -148,7 +148,7 @@ class MainMenuState extends MusicBeatState
 			}
 		}
 		#end
-		FlxTween.tween(menuItem, { x:400 }, 1.5, {ease});
+		FlxTween.tween(freeplay, { x:400 }, 1.5, {ease});
 		FlxTween.tween(BARmain, { x:480 }, 1.5, {ease});
 
 		#if android
